@@ -1,0 +1,56 @@
+{
+  "name": "@risoms/mdl-jupyterlab-theme",
+  "version": "0.20.1",
+  "description": "imhr theme for Jupyterlab. Modelled after the classic Intellij theme.",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension",
+    "jupyterlab-theme",
+    "imhr",
+    "imhr-theme"
+  ],
+  "homepage": "https://github.com/risoms/mdl-jupyterlab-theme",
+  "bugs": {
+    "url": "https://github.com/risoms/mdl-jupyterlab-theme/issues"
+  },
+  "license": "MIT",
+  "author": "Semeon Risom",
+  "files": [
+    "lib/*.d.ts",
+    "lib/*.js.map",
+    "lib/*.js",
+    "style/*"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/risoms/mdl-jupyterlab-theme.git"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "rimraf lib",
+    "prepare": "npm run clean && npm run build",
+    "watch": "tsc -w"
+  },
+  "dependencies": {
+    "@jupyterlab/application": "^0.19.1",
+    "@jupyterlab/apputils": "^0.19.1"
+  },
+  "devDependencies": {
+    "rimraf": "~2.6.2",
+    "typescript": "~3.1.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "jupyterlab": {
+    "extension": true,
+    "themeDir": "style",
+    "themePath": "style/index.css"
+  }
+}
