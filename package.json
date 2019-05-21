@@ -1,6 +1,6 @@
 {
   "name": "@risoms/mdl-jupyterlab-theme",
-  "version": "0.20.1",
+  "version": "0.9.0",
   "description": "imhr theme for Jupyterlab. Modelled after the classic Intellij theme.",
   "keywords": [
     "jupyter",
